@@ -1,58 +1,76 @@
-# LibLog
+# 📚 LibLog
 
-LibLog é um aplicativo desktop simples para gerenciamento de livros lidos, desenvolvido em Python com PyQt6. Ele permite adicionar, editar, remover e buscar livros, salvando os dados localmente em um arquivo JSON.
+LibLog is a simple desktop application for managing your read books, built with **Python** and **PyQt6**.
+It lets you **add, edit, remove, and search** books, saving everything locally in a **JSON file**.
 
-## Funcionalidades
+---
 
-- Adicionar livros com título, autor, gênero e nota (review)
-- Editar e remover livros cadastrados
-- Buscar livros por título, autor, gênero ou nota
-- Interface gráfica amigável e responsiva
-- Persistência dos dados em arquivo JSON na pasta `data/`
+## ✨ Features
 
-## Estrutura do Projeto
+* ➕ Add books with **title, author, genre, and rating**
+* ✏️ Edit and 🗑️ remove registered books
+* 🔍 Search books by **title, author, genre, or rating**
+* 🖥️ Friendly and responsive graphical interface
+* 💾 Data persistence in a JSON file inside the `data/` folder
+
+---
+
+## 📂 Project Structure
 
 ```
 liblog/
 │
 ├── models/
-│   └── book.py           # Classe Book (modelo de livro)
+│   └── book.py            # 📖 Book class (book model)
 │
 ├── ui/
-│   ├── add_book_dialog.py # Diálogo para adicionar/editar livros
-│   └── main_window.py     # Janela principal do aplicativo
+│   ├── add_book_dialog.py # ➕ Dialog for adding/editing books
+│   └── main_window.py     # 🪟 Main application window
 │
 ├── utils/
-│   └── book_storage.py    # Funções utilitárias para carregar livros
+│   └── book_storage.py    # 🛠️ Utility functions for loading books
 │
 └── __init__.py
 data/
-└── books.json             # Arquivo gerado automaticamente para armazenar os livros
+└── books.json             # 📂 Automatically generated file to store books
 ```
 
-## Como executar
+---
 
-1. **Instale as dependências**  
-   Recomendado usar um ambiente virtual:
+## 🚀 How to Run
+
+1. **Install dependencies**
+   Recommended: use a virtual environment
+
    ```bash
    python -m venv venv
    venv\Scripts\activate
    pip install pyqt6
    ```
 
-2. **Execute o aplicativo**
+2. **Run the application**
+
    ```bash
    python -m liblog.ui.main_window
    ```
 
-## Observações
+---
 
-- O arquivo `books.json` será criado automaticamente na primeira execução, dentro da pasta `data/`.
-- O projeto pode ser expandido com novas funcionalidades, como exportação, importação, ou integração com outros serviços.
+## 📝 Notes
 
-## Licença
-
-Este projeto é livre para fins de estudo e uso pessoal.
+* The file `books.json` will be created automatically on the **first run** inside the `data/` folder.
+* The project can be expanded with more features, such as 📤 export, 📥 import, or 🔗 integration with other services.
 
 ---
-Desenvolvido por Lucas Arcoverde
+
+## 📜 License
+
+This project is **free** for study and personal use.
+
+---
+
+👨‍💻 Developed by **Lucas Arcoverde**
+
+<img width="1002" height="789" alt="image" src="https://github.com/user-attachments/assets/e031da83-bb89-4496-8362-008c8d2b2ad2" />
+<img width="1002" height="789" alt="image" src="https://github.com/user-attachments/assets/cf7aab3a-b630-44eb-9cf1-ca15660bee54" />
+
